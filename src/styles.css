@@ -1,0 +1,501 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+button{
+    margin: 0;
+}
+
+/* HEADER/ */
+/* General styles */
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.buttons button {
+    margin-left: 10px;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact, .sign-up {
+    font-family: 'Gilroy';
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #98A2B3;
+    border: none;
+    background-color: transparent;
+}
+
+.login {
+    background-color: #1DDF0C;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* Hamburger menu styles */
+.menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hamburger {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .buttons {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu.open .buttons {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust as needed */
+        right: 0;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
+
+    .buttons button {
+        margin: 10px 0;
+        padding: 10px 20px;
+        width: 100%;
+    }
+}
+/* ///////////////////////// */
+
+.hero-text {
+    font-family: 'Segoe UI';
+    font-size: 24px; /* Default size */
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 565px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Segoe UI';
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 29px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 80px; /* Adjust size for medium screens */
+        line-height: 70px;
+    }
+    .hero-text {
+        font-size: 20px; /* Adjust size for medium screens */
+        width: 90%; /* Make width responsive */
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 60px; /* Adjust size for small screens */
+        line-height: 60px;
+    }
+    .hero-text {
+        font-size: 18px; /* Adjust size for small screens */
+        width: 95%; /* Make width responsive */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 40px; /* Adjust size for extra small screens */
+        line-height: 50px;
+    }
+    .hero-text {
+        font-size: 16px; /* Adjust size for extra small screens */
+        width: 100%; /* Full width for extra small screens */
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 30px; /* Further adjust size for very small screens */
+        line-height: 40px;
+    }
+    .hero-text {
+        font-size: 14px; /* Smaller font size for very small screens */
+        width: 100%; /* Maintain full width */
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.card-title {
+    font-family: 'Segoe UI';
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 29px;
+    color: #475467;
+}
+
+.icon {
+    font-size: 50px;
+}
+
+
+
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    .card {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.cards-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px 25px;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.card {
+    max-width: 450px;   
+    gap: 30px;
+}
+
+.card img {
+    width: 92px;
+    height: 92px;
+    display: block;
+    
+}
+
+
+
+.card-title-title{
+    margin: 10px 0;
+}
+
+.card-text {
+max-width: 403px;
+    font-size: 20px;
+  text-align: left;
+    font-family: Segoe UI;
+font-weight: 400;
+font-family: 'Segoe UI', sans-serif;
+color: #98A2B3;
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+
+
+/* ///////////////////////// CARDS-CARUSEL //// */
+
+
+.card {
+    border: none;
+
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+}
+
+
+
+button {
+    margin-top: 1rem;
+}
+
+/* ................... carsusel */
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .carousel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+  }
+  
+  .carousel {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .carousel-content {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+    will-change: transform; /* Improve performance */
+  }
+  
+  .carousel-slide {
+    flex: 0 0 auto; /* Ensure slides do not shrink */
+    width: 15%; /* Adjust based on the number of slides visible */
+    box-sizing: border-box;
+    padding: 0 20px; /* Adjust padding if needed */
+  }
+  
+  .carousel-card {
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid #E4E7EC;
+    background-color: white;
+    overflow: hidden;
+    text-align: left;
+  }
+  
+  .carousel-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-text {
+    padding: 20px;
+  }
+  
+  .carousel-text h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .carousel-text h2:hover {
+    color: #ff7f50; /* Change color on hover */
+  }
+  
+  .carousel-text .updated-text {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .carousel-text .description {
+    font-size: 1rem;
+    color: #999;
+  }
+  
+  .carousel-button {
+    background-color: rgba(128, 128, 128, 0);
+    color: #ff7f50;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .carousel-button .arrow {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-button:hover .arrow {
+    transform: translateX(5px);
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .carousel:hover .carousel-content {
+    animation-play-state: paused; /* Pause scrolling on hover */
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1200px) {
+    .carousel-slide {
+      width: 20%; /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .carousel-slide {
+      width: 25%; /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-slide {
+      width: 50%; /* Adjust for mobile screens */
+    }
+    
+    .carousel-card {
+      width: 90%;
+      height: auto;
+    }
+  
+    .carousel-text {
+      padding: 15px;
+    }
+  
+    .carousel-text h2 {
+      font-size: 1.2rem;
+    }
+  
+    .carousel-text .updated-text,
+    .carousel-text .description {
+      font-size: 1rem;
+    }
+  
+    .carousel-button {
+      padding: 8px 16px;
+    }
+  }
+  
+
+  /* ///////////////////////////////////CARUSEL// */
+  
+  
+  .hero {
+    background-size: cover;
+    padding: 180px 20px;
+    width: 97,5% !important; 
+}
+
+h1 {
+    font-family: 'Felix Titling';
+    font-size: 102px; /* Default size */
+    font-weight: 400;
+    line-height: 90px;
+    text-align: left;
+}
+
+h1 .highlight {
+    color: #FDB022;
+    margin-left: 20px;
+}
+
+.hero-title {
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Felix Titling';
+    margin: 10px;
+}
+
+.carusel-title{
+    align-items: left;
+}
+
+
+.card-title{
+    margin-top: 100px;
+}
